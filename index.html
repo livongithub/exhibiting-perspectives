@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script> -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="header"> <img id='logo-img' src="assets/rubin-logo.png"></div>
+
+        <button id="about"> ABOUT THE DATA</button>
+
+        <h1 id="title">Add your data to the roots</h1>
+
+        <div id="input-side">
+            <div id="checkboxes">
+                <p>do you believe there is a continuation after death?</p>
+            <div style="display: flex; flex-direction:row; gap: 20px;">
+                <input type="checkbox" id="reincarnation" name="reincarnation" class="custom-checkbox" /><label for="reincarnation" class="checkbox-label">yes</label>
+            </div>
+            <div style="display: flex; flex-direction:row; gap: 20px;">
+                <input type="checkbox" id="after-life" name="after-life" class="custom-checkbox" /><label for="after-life" class="checkbox-label" >   no</label>
+            </div>
+            </div>
+            <div id="worry-box">
+                <p>how worried you are about death?</p>
+                <div id="worry-stuff">
+            <p id="worry-text" style="margin-top: 12px;">6</p>
+            <input id="worry-value" type="range" min="1" max="10">
+        </div>
+        </div>
+            <button id="submit">SUBMIT</button>
+        </div>
+
+        <div id="my-canvas">
+
+        </div>
+
+        <img id="data-img" src='assets/data-explanation.png'>
+
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
